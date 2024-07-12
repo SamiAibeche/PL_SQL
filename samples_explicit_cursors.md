@@ -3,7 +3,7 @@
 /*************** The Complete PL/SQL Bootcamp ***************
  * Author  : Oracle Master Training                         *
  * Course  : The Complete Oracle PL/SQL Bootcamp            *
- * Lecture : Using Using Explicit Cursors                   *
+ * Lecture : Using Explicit Cursors                         *
  ************************************************************/
 
 declare
