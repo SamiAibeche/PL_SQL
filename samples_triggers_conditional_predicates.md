@@ -25,7 +25,7 @@ begin
 end;
 
 
-
+---------------------------------------------------------------------------------------------
 --------------------------------USING UPDATE OF EVENT IN TRIGGERS----------------------------
 ---------------------------------------------------------------------------------------------
 create or replace trigger prevent_updates_of_constant_columns
@@ -34,5 +34,18 @@ for each row
 begin
   raise_application_error(-20005,'You cannot modify the hire_date and salary columns');
 end;
+
+
+---------------------------------------------------------------------------------------------
+----------------------------------USING WHEN CLAUSE ON TRIGGERS------------------------------
+---------------------------------------------------------------------------------------------
+create or replace trigger prevent_high_salary
+before insert or update of salary on employees_copy 
+for each row
+when (new.salary > 50000)
+begin
+  raise_application_error(-20006,'A salary cannot be higher than 50000!.');
+end;
+
 
 ```
