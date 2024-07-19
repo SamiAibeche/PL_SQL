@@ -2,7 +2,7 @@
 /***************** The Complete PL/SQL Bootcamp *************
  * Author  : Oracle Master Training                         *
  * Course  : The Complete Oracle PL/SQL Bootcamp            *
- * Lecture : Associative Arrays                             *
+ * Lecture : Statement & Row Level Triggers                             *
  ************************************************************/
 
 ----------------- before statement level trigger example
